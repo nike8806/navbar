@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.6",
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "@svgr/webpack": "2.4.1",
+    "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
@@ -17,6 +19,7 @@
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
+    "enzyme": "^3.7.0",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-react-app": "^3.0.6",
@@ -40,8 +43,10 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.3.1",
     "postcss-safe-parser": "4.0.1",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-app-polyfill": "^0.2.0",
+    "react-autosuggest": "^9.4.2",
     "react-dev-utils": "^7.0.0",
     "react-dom": "^16.7.0",
     "resolve": "1.8.1",
@@ -52,14 +57,11 @@
     "webpack": "4.19.1",
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "3.6.3",
-    "enzyme": "^3.7.0"
+    "workbox-webpack-plugin": "3.6.3"
   },
   "devDependencies": {
-    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
-    "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },
   "scripts": {

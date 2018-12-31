@@ -1,0 +1,55 @@
+
+/*TODO MOVE THIS TO GLOBAL VARIABLE*/
+$main-color: #FFF;
+$secondary-color: #343A40;
+$size-factor: 7px;
+
+.flex--nowrap {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+// Header styles
+.header {
+  background: $secondary-color;
+  @extend .flex--nowrap;
+  padding: $size-factor $size-factor*2;
+  color: $main-color;
+
+  &__menu {
+    @extend .flex--nowrap;
+    padding-top: $size-factor;
+    padding-bottom: $size-factor;
+    &__title{
+      display: none;
+    }
+    @media only screen and (min-width: 600px) {
+      &__title{
+        display: block;
+      }
+    }
+
+    > * {
+      padding-left: $size-factor;
+      padding-right: $size-factor;
+    }
+  }
+
+  &__widgets {
+    @extend .flex--nowrap;
+    align-items: center;
+
+    &__search {
+      height: $size-factor*4;
+    }
+
+    > * {
+      color: $main-color;
+      background: none;
+      padding-left: $size-factor;
+      padding-right: $size-factor;
+    }
+  }
+}

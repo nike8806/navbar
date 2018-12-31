@@ -1,16 +1,18 @@
-import React, { PureComponent } from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
+import Header from './shared-components/header/Header';
 
-class App extends PureComponent {
+class App extends Component {
   state = {
-    anyState: 'Hi'
+    title: 'Hi!, this is the Jaime´s tests'
   };
 
   render() {
-    const { anyState } = this.state;
+    const { title } = this.state;
     return (
       <div className="App">
-        { anyState }
+        <Header />
+        {title}
       </div>
     );
   }
