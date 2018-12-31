@@ -24,5 +24,12 @@ module.exports = {
       'react/jsx-filename-extension': 0,
       'react/jsx-one-expression-per-line': 0,
       'react/forbid-prop-types': ['error', { forbid: ['any'] }]
+    },
+    settings: {
+      'import/resolver': {
+        node: {
+          extensions: [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
     }
 };
