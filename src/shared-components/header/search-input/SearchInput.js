@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import './SearchInput.scss';
 
 const { CancelToken } = axios;
-const apiJobs = 'http://api.dataatwork.org/v1/';
+const apiJobs = 'https://api.dataatwork.org/v1/';
 const jobsUrls = {
   autocomplete: 'jobs/autocomplete',
   detail: 'jobs/'
